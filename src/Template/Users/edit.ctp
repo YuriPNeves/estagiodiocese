@@ -15,8 +15,12 @@
     <fieldset>
         <legend><?= __('Edit User') ?></legend>
         <?php
-            echo $this->Form->input('username');
+            echo $this->Form->input('nome');
+            echo $this->Form->input('nivel_acesso',['options' => ['admin' => 'Admin', 'redator' => 'Redator']
+        ]);
+			echo $this->Form->input('username');
             echo $this->Form->input('password');
+            
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

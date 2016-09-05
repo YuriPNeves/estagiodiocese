@@ -11,16 +11,24 @@
     <h3><?= h($user->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th><?= __('Username') ?></th>
-            <td><?= h($user->username) ?></td>
+            <th><?= __('Nome') ?></th>
+            <td><?= h($user->nome) ?></td>
         </tr>
         <tr>
             <th><?= __('Password') ?></th>
             <td><?= h($user->password) ?></td>
         </tr>
         <tr>
+            <th><?= __('Username') ?></th>
+            <td><?= h($user->username) ?></td>
+        </tr>
+        <tr>
             <th><?= __('Id') ?></th>
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
     </table>
+    <div class="row">
+        <h4><?= __('Nivel Acesso') ?></h4>
+        <?= $this->Text->autoParagraph(h($user->nivel_acesso)); ?>
+    </div>
 </div>

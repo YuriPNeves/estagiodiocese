@@ -39,10 +39,9 @@ class AppController extends Controller
      */
     public function initialize()
     {
-        parent::initialize();
-
+        
         $this->loadComponent('Flash');
-		/*$this->loadComponent('Auth',[
+		$this->loadComponent('Auth',[
 		'authenticate' => [
 		'Form' => [
 		'fields' => [
@@ -56,7 +55,7 @@ class AppController extends Controller
 		'action'=> 'login'
 		]
 		]);
-		$this->Auth->allow(['display']);*/
+		$this->Auth->allow(['display']);
     }
 
     /**
@@ -65,6 +64,7 @@ class AppController extends Controller
      * @param \Cake\Event\Event $event The beforeRender event.
      * @return void
      */
+
     public function beforeRender(Event $event)
     {
         if (!array_key_exists('_serialize', $this->viewVars) &&

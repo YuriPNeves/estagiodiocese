@@ -10,7 +10,18 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
+	
+	public function initialize()
+{
+    parent::initialize();
+    $this->Auth->allow(['logout', 'add']);
+}
 
+public function logout()
+{
+    $this->Flash->success('You are now logged out.');
+    return $this->redirect($this->Auth->logout());
+}
     /**
      * Index method
      *
@@ -19,8 +30,8 @@ class UsersController extends AppController
 	 
 	 public function login(){
 		 if($this->request->is('post')){
-			 $administradore = $this->Auth->identify();
-			 if($administradore){
+			 $User = $this->Auth->identify();
+			 if($User){
 				 $this->Auth->setUser($User);
 				 return $this->redirect($this->Auth->redirectUrl());
 			 }
@@ -35,12 +46,6 @@ class UsersController extends AppController
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
     }
-	
-	public function logout()
-{
-    $this->Flash->success('You are now logged out.');
-    return $this->redirect($this->Auth->logout());
-}
 
     /**
      * View method
