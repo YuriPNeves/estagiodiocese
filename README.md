@@ -1,26 +1,39 @@
-# CakePHP Application Skeleton
+CakePHP
+=======
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
 
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
+CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
+Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+Some Handy Links
+----------------
 
-## Installation
+[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
 
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+[Cookbook](http://book.cakephp.org) - THE Cake user documentation; start learning here!
 
-If Composer is installed globally, run
-```bash
-composer create-project --prefer-dist cakephp/app [app_name]
-```
+[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
 
-You should now be able to visit the path to where you installed the app and see
-the setup traffic lights.
+[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
 
-## Configuration
+[API](http://api.cakephp.org) - A reference to Cake's classes
 
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.
+[CakePHP TV](http://tv.cakephp.org) - Screen casts from events and video tutorials
+
+[The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
+
+Get Support!
+------------
+
+[Our Google Group](https://groups.google.com/group/cake-php) - community mailing list and forum
+
+[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake.
+
+[Q & A](http://ask.cakephp.org/) - Ask questions here, all questions welcome
+
+[Lighthouse](https://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
+
+[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
+
+![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
